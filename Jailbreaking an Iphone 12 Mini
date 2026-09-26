@@ -1,0 +1,50 @@
+In this lab I will demonstrate how to jailbreak(semi-untethered) 
+an Iphone 12 Mini using information gathering and running exploits.
+A semi-untethered jailbreak's access disappears after the device restarts. 
+IOS security is designed so that root access is removed and userland exploits 
+do not persist across reboots.
+______________________________________________________________________________________________________________________________-
+Tools & Websites Used
+
+Jailbreaking Tool: Dopamine
+Website Used for Information Gathering: https://gsmarena.com/
+Website Used to Find Compatible Jailbreaking Tool: https://theapplewiki.com/wiki/Jailbreak
+Command Used: ./TrollRestore (Used to rebuild parts of the iOS filesystem and enables 
+limited access to app data)
+TrollStore: App installer which allows installation of unsigned applications on iOS
+______________________________________________________________________________________________________________________________
+In order to jailbreak a mobile device, we must meet specific requirements to be successful.
+1. Device information
+2. A publicly known vulnerability tied to the device information(.e.g.,Operating System Version)
+3. Find a compatible jailbreaking tool
+We must then connect the mobile device to a pc in order to get initial access and send data.
+Run the exploit tool and install the malicious software.
+______________________________________________________________________________________________________________________________
+Fun Question: Why do we need to connect to the internet when going though the initial phase 
+of setting up an iphone?
+
+The Lab
+
+Identify the model name and chipset of the mobile device
+Model Name: Iphone 12 Mini
+OS: 16.5.1
+SoC: Apple A14 Bionic (5nm)
+Essentially gathering necessary infomation that can assist our operation
+
+
+We have the initial information needed for jailbreaking, connect the device to the laptop,
+choose trust this computer
+
+
+Run ./TrollRestore to choose an app to replace, in this case I chose "Tips", after typing and 
+choosing 
+the app, the phone will automatically reboot. When we open the "Tips" app, the app should show 
+a different GUI.
+install TrollStore, install Dopamine from github and select Sileo as the package manager.
+Once selected select Jailbreak. It should say Jailbroken.
+
+______________________________________________________________________________________________________________________________
+
+
+
+
